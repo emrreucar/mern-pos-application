@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  @apply bg-gray-50
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.menu-link .anticon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  body{
+    overflow: hidden;
+  }
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+}
